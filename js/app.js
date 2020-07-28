@@ -59,4 +59,6 @@ const card = '5299 6400 0000 0000';
 
 const pattern6 = /^([50|51|52|53|54|55]+\d{2})(\s|-)?(\d{4})(\s|-)?(\d{4})(\s|-)?(\d{4})$/;
 
+console.log(pattern6.test(card));
+
 console.log("Los dígitos de la tarjeta son: "+ card.match(pattern6)[1] + "," + card.match(pattern6)[3] + "," + card.match(pattern6)[5] + "," + card.match(pattern6)[7]);
